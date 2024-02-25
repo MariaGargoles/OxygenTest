@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/output.css" rel="stylesheet">
+    <title>Prueba Oxygen</title>
+</head>
+<body>
+    <div class="flex flex-col min-h-screen bg-slate-100">
+        <header class="py-6 px-4 bg-slate-100 shadow-md text-purple-950">
+          <div class="container mx-auto flex justify-center items-center">
+            <a href="#" class="text-2xl font-bold text-purple-950" rel="ugc">
+                <h1 class="text-xl  font-bold"> unit converter</h1>
+            </a>
+        </header>
+            <main class="flex-1">
+            <section class="container  rounded-lg border text-card-foreground shadow-sm mx-auto p-6 mt-8 bg-purple-950">
+                <h2 id="titulo" class="text-3xl font-semibold text-white mb-4 ">Convert</h2>
+                <div id="cuerpo" class="text-lg text-black mb-6">
+                    <div class="flex items-flex mb-4">
+                        <label for="unidad" class="mr-2">Convertir a:</label>
+                        <select id="unidad" class="border rounded px-2 py-1">
+                            <option value="millas">Km-millas</option>
+                        </select>
+                    </div>
+                    <div class="flex items-flex mb-4">
+                        <label for="kilometros" class="mr-2">Kilómetros:</label>
+                        <input type="number" id="kilometros" class="border rounded px-2 py-1" placeholder="Ingrese la distancia en kilómetros">
+                    </div>
+                </div>
+                
+                
+                    
+            
+                    <button onclick="convertir()" class="bg-slate-300 text-white px-4 py-2 rounded-md">Convertir</button>
+            
+                    <div id="resultado" class="mt-4"></div>
+                </div></p>
+              </section>
+            </main>
+
+   
+
+</body>
+
+
+
+
+
+</html>
